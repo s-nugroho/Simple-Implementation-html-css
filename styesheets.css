@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  background-size: cover;
+}
+
+.top-left {
+  padding: 180px 0 100px 0;
+  color: rgb(0, 0, 0);
+  float: left;
+  padding-left: 2%;
+}
+
+.top-left h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.top-wrapper h3 {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 210px;
+  margin-top: 15px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: rgb(150, 148, 148);
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.top-right {
+  float: right;
+  width: 600px;
+  padding: 100px 0 100px;
+}
+
+.animated {
+  position: relative;
+  animation-name: example;
+  animation-duration: 3.7s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 0px;
+    top: 50px;
+  }
+  75% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* style body ////////////////////////////////////////////*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  padding: 0px 60px 0px 60px;
+}
+
+main h2 {
+  font-weight: bolder;
+  font-size: 22px;
+  /* background-color: yellow; */
+}
+
+main p {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .title:first-of-type {
+    /* For increasing performance 
+        ID/Class should've been used. 
+        For a small demo 
+        it's okaish for now */
+    animation: showup 10s;
+  }
+
+  .title:last-of-type {
+    /* width:0px; */
+    animation: reveal 10s;
+  }
+
+  .title:last-of-type span {
+    /* margin-left:-355px; */
+    animation: slidein 10s;
+  }
+
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: -700px;
+    }
+    20% {
+      margin-left: -700px;
+    }
+    35% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      width: 0px;
+    }
+    20% {
+      opacity: 1;
+      width: 0px;
+    }
+    30% {
+      width: 298px;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      width: 298px;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.content::before {
+  opacity: 0.2;
+  content: "";
+  position: absolute;
+  background-image: url("assets/bg-content.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content span {
+  position: relative;
+  color: black;
+  font-weight: 1000;
+  font-size: 50px;
+  text-align: center;
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  font-size: 30pt;
+}
+
+.lesson {
+  float: left;
+  width: 23%;
+  background-color: white;
+  margin-left: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-top: 50px;
+  /* padding-bottom: 10px; */
+  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+
+.lesson-icon img {
+  height: 185px;
+  margin-left: 0%;
+  position: absolute;
+  left: -8%;
+  top: -16.5%;
+  border-radius: 10% 10% 64% 35% / 10% 10% 79% 42%;
+}
+
+.lesson-icon .seftian {
+  top: -23%;
+  left: -12%;
+  position: absolute;
+}
+
+.lesson-icon .zakiya {
+  height: 200px;
+  top: -50px !important;
+  left: -13px !important;
+  border-radius: 10% 10% 72% 33% / 10% 10% 100% 93% !important;
+}
+
+.lesson-icon .sriw {
+  top: -34px;
+  left: -14%;
+  position: relative;
+  border-radius: 69% 31% 62% 38% / 3% 24% 76% 97% !important;
+}
+
+.bg-icon {
+  display: inline-block;
+  height: 155px;
+  width: 150px;
+  background-color: rgb(244, 67, 54);
+  position: relative;
+  /* border-radius: 80% 20% 70% 30% / 37% 18% 82% 63%; */
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: all 1s ease-in-out;
+  /* z-index: 5; */
+  box-shadow: rgba(244, 67, 54, 0.4) -5px 5px, rgba(244, 67, 54, 0.3) -10px 10px,
+    rgba(244, 67, 54, 0.2) -15px 15px, rgba(244, 67, 54, 0.1) -20px 20px,
+    rgba(244, 67, 54, 0.05) -25px 25px;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: rgb(211, 47, 47);
+    box-shadow: rgba(211, 47, 47, 0.4) -5px 5px,
+      rgba(211, 47, 47, 0.3) -10px 10px, rgba(211, 47, 47, 0.2) -15px 15px,
+      rgba(211, 47, 47, 0.1) -20px 20px, rgba(211, 47, 47, 0.05) -25px 25px;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-color: rgb(55, 71, 79);
+    box-shadow: rgba(55, 71, 79, 0.4) -5px 5px, rgba(55, 71, 79, 0.3) -10px 10px,
+      rgba(55, 71, 79, 0.2) -15px 15px, rgba(55, 71, 79, 0.1) -20px 20px,
+      rgba(55, 71, 79, 0.05) -25px 25px;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: rgb(211, 47, 47);
+    box-shadow: rgba(211, 47, 47, 0.4) -5px 5px,
+      rgba(211, 47, 47, 0.3) -10px 10px, rgba(211, 47, 47, 0.2) -15px 15px,
+      rgba(211, 47, 47, 0.1) -20px 20px, rgba(211, 47, 47, 0.05) -25px 25px;
+  }
+}
+
+.child-bg {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #b3aeb5;
+  text-align: left;
+  /* margin-left: 20%; */
+  font-weight: 500;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.lesson .ig {
+  text-align: center;
+  width: 80%;
+  display: inline-block;
+  font-size: 14px;
+  color: #b3aeb5;
+  margin-bottom: 10%;
+  margin-top: 0px;
+  top: 0px;
+  padding: 0px;
+  font-weight: lighter;
+  top: -5px;
+}
+
+@media (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .lesson {
+    width: 46%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 678px) {
+  .content {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+  }
+
+  .lesson {
+    width: 100%;
+  }
+}
+
+/* style footer/////////////////////////////////////////////////////////////////////// */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #edc4b3;
+}
+footer .article {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .article p,
+a {
+  color: black;
+}
+footer .article .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .article .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 16px;
+}
+footer .article p {
+  text-align: justify;
+}
+footer .article .lower .topic {
+  margin: 24px 0 5px 0;
+}
+footer .article .lower i {
+  padding-right: 16px;
+}
+footer .article .middle {
+  padding-left: 80px;
+}
+footer .article .middle a {
+  line-height: 32px;
+}
+footer .article .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: black;
+  background: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .article .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #774936;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #774936;
+  transition: all 0.3s ease-in-out;
+}
+.article .right input[type="submit"]:hover {
+  background: none;
+  color: #774936;
+}
+footer .article .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.article .media-icons a:hover {
+  border-color: #774936;
+}
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: black;
+  padding: 0 40px 5px 0;
+  border-top: 1px solid #774936;
+}
+footer .bottom a {
+  color: #774936;
+}
+footer a {
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #774936;
+}
+@media (max-width: 1100px) {
+  footer .article .middle {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 950px) {
+  footer .article .box {
+    width: 50%;
+  }
+  .article .right {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+  footer .article .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .article .middle {
+    padding-left: 0;
+  }
+}
