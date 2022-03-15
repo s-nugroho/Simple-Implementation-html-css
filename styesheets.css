@@ -15,11 +15,17 @@ a {
   clear: left;
 }
 
-.container {
+header .container,
+.top-wrapper .container {
   max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  display: flex;
+}
+
+header .container {
+  justify-content: space-between;
 }
 
 .top-wrapper {
@@ -94,9 +100,9 @@ header {
 }
 
 .top-right {
-  float: right;
+  /* float: right; */
   width: 600px;
-  padding: 100px 0 100px;
+  margin: 100px 100px;
 }
 
 .animated {
@@ -241,7 +247,7 @@ main p {
   background-image: url("assets/bg-content.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   margin-top: 30px;
   top: 0px;
   bottom: 0px;
@@ -445,9 +451,10 @@ main p {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
+
 footer {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   background: #edc4b3;
