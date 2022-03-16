@@ -457,7 +457,7 @@ footer {
   /* position: fixed; */
   bottom: 0;
   left: 0;
-  background: #edc4b3;
+  background: white;
 }
 footer .article {
   max-width: 1350px;
